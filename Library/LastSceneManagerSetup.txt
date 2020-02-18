@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Day1.unity
+- path: Assets/2020_02_18.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8699929728834510015}
+  - component: {fileID: 2598452895238762273}
   - component: {fileID: 5298183873493757936}
   - component: {fileID: 7833353409184677665}
   - component: {fileID: 4901440314761526624}
+  - component: {fileID: 7083701021301471945}
   m_Layer: 0
   m_Name: NetworkPlayer
   m_TagString: Untagged
@@ -34,6 +36,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2598452895238762273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074308566159580564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b48e6de70445e4d9bdcbaa1a2cb72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  _playerMovementSpeed: 25
+  _playerRotationSpeed: 50
 --- !u!114 &5298183873493757936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +106,24 @@ MonoBehaviour:
   localScaleSensitivity: 0.01
   compressRotation: 1
   target: {fileID: 2636596982135874483}
+--- !u!143 &7083701021301471945
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074308566159580564}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &1196973306099712228
 GameObject:
   m_ObjectHideFlags: 0
